@@ -22,6 +22,7 @@ import Fab from "@material-ui/core/Fab";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
 import SwapHorizIcon from "@material-ui/icons/SwapHoriz";
 import Hidden from "@material-ui/core/Hidden";
+import "../../App.css";
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -30,18 +31,23 @@ const useStyles = makeStyles((theme) => ({
   planCard: {
     marginTop: theme.spacing(3),
   },
-
+  swapIcon: {
+    position: "relative",
+    zIndex: 12,
+    left: "86vh",
+    top: "-15vh",
+  },
   twak: {
     position: "fixed",
     zIndex: 3,
-    top: "34vh",
-    left: "77vw",
+    top: "34%",
+    left: "77%",
   },
   fabButton: {
     position: "fixed",
     zIndex: 3,
-    top: "93vh",
-    left: "92vw",
+    top: "93%",
+    left: "92%",
   },
 }));
 
@@ -174,7 +180,6 @@ export default function Blog() {
           marginTop: "100vh",
           backgroundColor: "#eec0c6",
           backgroundImage: "linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%)",
-
           // background:
           //   "linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),linear-gradient(336deg, rgba(64, 214, 241, 1), rgba(0,0,255,0) 70.71%)",
         }}

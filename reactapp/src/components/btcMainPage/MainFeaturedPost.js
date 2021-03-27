@@ -4,9 +4,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Hidden from "@material-ui/core/Hidden";
 import Link from "@material-ui/core/Link";
+import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
+import ThreeD from "./threeD";
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
@@ -17,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "url(https://source.unsplash.com/random)",
     backgroundSize: "cover",
     height: "100vh",
+
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     // marginTop: theme.spacing(6),
@@ -85,6 +89,36 @@ function MainFeaturedPost(props) {
                 </Typography>
               </CardContent>
             </div>
+          </Grid>
+
+          <Grid
+            item
+            md={6}
+            alignItem="buttom"
+            style={{
+              // <Grid style={{ height: "100vh", position: "absolute" }}></Grid>
+              position: "relative",
+              zIndex: 3,
+
+              // margiTop: "10vh",
+              // width: "100wh",
+              // height: "90vh",
+            }}
+          >
+            <Hidden smDown>
+              <Card
+                elevation={12}
+                style={{
+                  // <Grid style={{ height: "100vh", position: "absolute" }}></Grid>
+
+                  alignItems: "center",
+                  width: "100wh",
+                  height: "90vh",
+                }}
+              >
+                <ThreeD />
+              </Card>
+            </Hidden>
           </Grid>
         </Grid>
       </Paper>

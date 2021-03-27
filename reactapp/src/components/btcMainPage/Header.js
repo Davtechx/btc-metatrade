@@ -11,7 +11,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "rgba(144, 202, 249, 1)",
+    backgroundColor: "rgba(144, 202, 249, .7)",
   },
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
